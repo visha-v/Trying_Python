@@ -1,4 +1,3 @@
-
 miles = input('Enter Miles: ')
 
 miles = int(miles)
