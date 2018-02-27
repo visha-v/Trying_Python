@@ -1,4 +1,4 @@
-age = eval(input("Enter age: "))
+age = int(input("Enter age: "))
 
 if (age >= 1) and (age <= 18):
     print ("Important Birthday")
