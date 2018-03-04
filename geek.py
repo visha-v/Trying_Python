@@ -2,9 +2,7 @@ import os
 import sys
 import psutil
 
-process_is_active = True
-
-while process_is_active:
+while True:
     command = input('''
     Введите номер нужной функции:
     [1] - Содержание текущей директории
