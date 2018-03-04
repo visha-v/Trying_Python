@@ -2,7 +2,7 @@ import os
 import sys
 import psutil
 
-process_is_active = true
+process_is_active = True
 
 while process_is_active:
     command = input('''
@@ -13,6 +13,8 @@ while process_is_active:
     [4] - Текущая директория
     [5] - Кодировка файловой системы
     [6] - Имя пользователя
+    
+    Для выхода [0]
     
     ''')
     if command == ('1'):
@@ -27,11 +29,11 @@ while process_is_active:
         print(sys.getfilesystemencoding()) # Кодировка файловой системы
     elif command == ('6'):
         print(os.getlogin()) # Имя текущего пользователя системы
-    elseif command == ('0'):
-        process_is_active = false
-        print('Пока!')
+    elif command == ('0'):
+        break
     else:
         print('Некорректное значение!')
+print('Пока!')
     
 
 
